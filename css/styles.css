@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Junge&family=Raleway&display=swap");
+
+:root {
+  --darkBlue_color: #225378;
+  --white_color: #f3ffe2;
+  --cyan_color: #acf0f2;
+  --lightBlue_color: #1695a3;
+
+  --brand_font: "Raleway", sans-serif;
+  --text_font: "Junge", serif;
+  --heading_font: "IM Fell Double Pica", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text_font);
+  font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading_font);
+  font-size: 2rem;
+  padding: 0.25rem;
+}
+
+header {
+  background-color: var(--darkBlue_color);
+  color: var(--white_color);
+
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h1 {
+  font-family: var(--brand_font);
+  letter-spacing: 2px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+nav > ul > li {
+  margin: 0rem 0.75rem;
+  border-bottom: 2px solid transparent;
+}
+nav > ul > li:hover {
+  border-bottom: 2px solid var(--cyan_color);
+  cursor: pointer;
+}
+
+main {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+section {
+  margin: 3rem 0rem;
+}
+
+section > ul {
+  list-style: none;
+}
+
+section > ul > li {
+  margin: 2rem 0rem;
+}
+
+section > ul > li > p {
+  margin-bottom: 0.75rem;
+}
+
+section > ul > li > label {
+  margin: 0rem 0.25rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--lightBlue_color);
+  color: var(--white_color);
+  font-family: var(--text_font);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  border: none;
+  outline: none;
+
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--darkBlue_color);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--darkBlue_color);
+  color: var(--white_color);
+  font-family: var(--heading_font);
+
+  padding: 0.75rem 1.5rem;
+
+  text-align: center;
+}
+
+footer > p {
+  margin-bottom: 1rem;
+}
+
+footer > p > a {
+  color: var(--cyan_color);
+  text-decoration: none;
+}
+footer > p > a:hover {
+  color: var(--white_color);
+}
+
+@media (max-width: 630px) {
+  nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  nav > ul {
+    flex-wrap: wrap;
+  }
+
+  nav > ul > li {
+    margin-top: 1rem;
+  }
+}
