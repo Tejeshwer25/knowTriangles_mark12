@@ -1,0 +1,53 @@
+main > .checkTriangle {
+  margin: 2rem 0rem;
+}
+
+main .checkTriangle > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 1rem 0rem;
+}
+
+main > .checkTriangle > label > p {
+  margin-right: 2rem;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+main > .checkTriangle > label > input {
+  font-size: 1rem;
+  font-family: var(--text_font);
+
+  border: 2px solid var(--lightBlue_color);
+  outline: none;
+  border-radius: 5px;
+
+  padding: 0.25rem 0.5rem;
+}
+
+main > .checkTriangle > button {
+  margin-top: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#result {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 250px) {
+  footer {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
