@@ -1,3 +1,11 @@
 #result {
   margin: 2rem 0rem;
 }
+
+@media (max-width: 525px) {
+  footer {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
