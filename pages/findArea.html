@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/knowTriangles.css" />
     <link rel="stylesheet" href="../css/calculateHypoteneuse.css" />
 
-    <title>Know Triangles? | Calculate Hypotenuse</title>
+    <title>Know Triangles? | Calculate Area</title>
 </head>
 <body>
     <header>
@@ -18,26 +18,30 @@
             <ul>
                 <li><a href="./knowTriangles.html">Is Triangle</a></li>
                 <li><a href="../index.html">Quiz</a></li>
-                <li id="active">Hypotenuse</li>
-                <li><a href="./findArea.html">Find Area</a></li>
+                <li><a href="./calculateHypotneuse.html">Hypotenuse</a></li>
+                <li id="active">Find Area</li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Calculate Hypotenuse of a Triangle</h2>
+        <h2>Calculate the Area of a Triangle</h2>
 
         <form class="checkTriangle">
             <label>
-                <p>Enter the base value (a)</p>
-                <input type="number" name="base" id="baseValue" required/>
+                <p>Enter the first side of the triangle(a)</p>
+                <input type="number" name="firstSide" id="firstSide" required/>
             </label>
             <label>
-                <p>Enter the height value (b)</p>
-                <input type="number" name="height" id="heightValue" required/>
+                <p>Enter the second side of the triangle(b)</p>
+                <input type="number" name="secondSide" id="secondSide" required/>
+            </label>
+            <label>
+                <p>Enter the third side of the triangle(c)</p>
+                <input type="number" name="thirdSide" id="thirdSide" required/>
             </label>
 
-            <button id="submitBtn">Calculate Hypotenuse</button>
+            <button id="submitBtn">Calculate Area</button>
         </form>
 
         <article id="result"></article>
@@ -51,6 +55,6 @@
         <p>Made with <span>🧡</span> by <a href="https://tejeshwer-singh.netlify.app">Tejeshwer</a></p>
     </footer>
 
-    <script src="../js/calculateHypoteneuse.js"></script>
+    <script src="../js/findArea.js"></script>
 </body>
 </html>
