@@ -5,47 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />    
     <link rel="stylesheet" href="../css/knowTriangles.css" />
+    <link rel="stylesheet" href="../css/calculateHypoteneuse.css" />
 
-    <title>Know Triangles | Is Triangle?</title>
+    <title>Know Triangles? | Calculate Hypotenuse</title>
 </head>
 <body>
     <header>
         <nav>
             <h1>Know Triangles?</h1>
             <ul>
-                <li id="active">Is Triangle</li>
+                <li><a href="./knowTriangles.html">Is Triangle</a></li>
                 <li><a href="../index.html">Quiz</a></li>
-                <li><a href="./calculateHypotneuse.html">Hypotenuse</a></li>
+                <li id="active">Hypotenuse</li>
                 <li>Find Area</li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Angles of triangle</h2>
+        <h2>Calculate Hypotenuse of a Triangle</h2>
 
         <form class="checkTriangle">
             <label>
-                <p>Angle 1</p>
-                <input type="number" name="angle1" id="angle1" />
+                <p>Enter the base value (a)</p>
+                <input type="number" name="base" id="baseValue" required/>
             </label>
-            
             <label>
-                <p>Angle 2</p>
-                <input type="number" name="angle2" id="angle2" />
-            </label>
-            
-            <label>
-                <p>Angle 3</p>
-                <input type="number" name="angle3" id="angle3" />
+                <p>Enter the height value (b)</p>
+                <input type="number" name="height" id="heightValue" required/>
             </label>
 
-            <button id="checkTriangle">Is Triangle?</button>
+            <button id="submitBtn">Calculate Hypotenuse</button>
         </form>
 
         <article id="result"></article>
+
+        <h2>Hypotenuse Formula</h2>
+        <strong>√(base<span>2</span> + height<span>2</span>)</strong>
     </main>
 
     <footer>
@@ -53,6 +51,6 @@
         <p>Made with <span>🧡</span> by <a href="https://tejeshwer-singh.netlify.app">Tejeshwer</a></p>
     </footer>
 
-    <script type="text/javascript" src="../js/knowTriangle.js"></script>
+    <script src="../js/calculateHypoteneuse.js"></script>
 </body>
 </html>
