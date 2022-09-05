@@ -1,4 +1,4 @@
-# knowTriangles_mark12
+# Mark-12: Know Triangles
 
 App to check your knowledge on triangles
 
