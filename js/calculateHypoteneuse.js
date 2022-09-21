@@ -11,12 +11,12 @@ function calculateHypotneuse(e) {
   const base = parseFloat(baseValue.value);
   const height = parseFloat(heightValue.value);
 
-  if (!base || !height) {
+  if (!base || !height || base <= 0 || height <= 0) {
     resultDiv.innerHTML = "Please enter a valid number";
     return;
   }
 
-  const hypotneuse = Math.sqrt(base * base + height * height);
+  const hypotneuse = Math.sqrt(base * base + height * height).toFixed(3);
 
   result.textContent = `The length of hypotneuse is ${hypotneuse}`;
 }

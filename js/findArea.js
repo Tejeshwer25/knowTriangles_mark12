@@ -13,8 +13,12 @@ function findArea(e) {
   const b = parseFloat(secondSide.value);
   const c = parseFloat(thirdSide.value);
 
-  if (!a || !b || !c) {
-    result.innerHTML = "Please enter a valid value";
+  if (!a || !b || !c || a <= 0 || b <= 0 || c <= 0) {
+    result.innerHTML = `
+      <h4 style="color: red">
+        Please enter a valid value
+      </h4>
+    `;
     return;
   }
 
